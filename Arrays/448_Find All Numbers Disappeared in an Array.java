@@ -1,5 +1,8 @@
+TC: O(n);
+SC: O(1);
 
- public List<Integer> findDisappearedNumbers(int[] nums) {
+
+public List<Integer> findDisappearedNumbers(int[] nums) {
         for (int i : nums) {
             int index = Math.abs(i);
             if (nums[index - 1] > 0) {
