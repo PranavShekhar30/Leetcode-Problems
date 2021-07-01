@@ -22,7 +22,7 @@ OR
 TC: O(N)
 SC: O(1)
   
-Floyd's Tortoise and Hare (Cycle Detection)
+Floyds Tortoise and Hare (Cycle Detection)
 	
   
 class Solution {
