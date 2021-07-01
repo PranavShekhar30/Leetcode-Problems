@@ -27,25 +27,25 @@ Floyds Tortoise and Hare (Cycle Detection)
   
 class Solution {
        public int findDuplicate(int[] nums) {
-        int fastPointer = 0, slowPointer = 0;
-        
-		// Phase 1: Try to make them meet each other
-    do
-        {
-            fastPointer = nums[nums[fastPointer]];
-            slowPointer = nums[slowPointer];
+            if (nums.length == 0){
+		    return -1;
+	    }
+	       // Phase 1: Try to make them meet each other
+	       
+              int slow = nums[0], fast = nums[nums[0]];
+              while (slow != fast) {
+                slow = nums[slow];
+                fast = nums[nums[fast]];
         }
-        while (fastPointer != slowPointer);
+	   
+	       // Phase 2: Bring the slow pointer to the start and make them move over 1 by 1
         
-	// Phase 2: Bring the slow pointer to the start and make them move over 1 by 1
-        
-           slowPointer = 0;
-        while (slowPointer != fastPointer) {
-            slowPointer = nums[slowPointer];
-            fastPointer = nums[fastPointer];
+	       
+          slow = 0;
+             while (slow != fast) {
+                 slow = nums[slow];
+                 fast = nums[fast];
         }
-        
-        return slowPointer;
+        return slow;
     }
-
 }
