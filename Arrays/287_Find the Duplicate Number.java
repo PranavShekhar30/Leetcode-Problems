@@ -1,9 +1,31 @@
+
+TC: O(nlogn)
+SC: O(1) or O(n)
+  
+class Solution {
+    public int findDuplicate(int[] nums) {
+        Arrays.sort(nums);
+        int ans=0;
+        for(int i=0;i<nums.length-1;i++){
+            if(nums[i]==nums[i+1]){
+                ans = nums[i];
+            }
+        }
+        return ans;
+    }
+}
+
+
+OR
+
+
 TC: O(N)
 SC: O(1)
   
 Floyd's Tortoise and Hare (Cycle Detection)
+	
   
-  class Solution {
+class Solution {
        public int findDuplicate(int[] nums) {
         int fastPointer = 0, slowPointer = 0;
         
@@ -26,22 +48,4 @@ Floyd's Tortoise and Hare (Cycle Detection)
         return slowPointer;
     }
 
-}
-
-OR
-
-TC: O(nlogn)
-SC: O(1) or O(n)
-  
-  class Solution {
-    public int findDuplicate(int[] nums) {
-        Arrays.sort(nums);
-        int ans=0;
-        for(int i=0;i<nums.length-1;i++){
-            if(nums[i]==nums[i+1]){
-                ans = nums[i];
-            }
-        }
-        return ans;
-    }
 }
