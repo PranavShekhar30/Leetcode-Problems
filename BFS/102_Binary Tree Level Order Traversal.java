@@ -14,6 +14,7 @@
  * }
  */
 class Solution {
+class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
        List<List<Integer>> bfs = new ArrayList<>();
         if(root==null){
@@ -28,10 +29,10 @@ class Solution {
                 TreeNode temp = q.remove();
                 currlevel.add(temp.val);
                 if(temp.left!=null){
-                    q.add(root.left);
+                    q.add(temp.left);
                 }
                  if(temp.right!=null){
-                    q.add(root.right);
+                    q.add(temp.right);
                 }
          
             }  
