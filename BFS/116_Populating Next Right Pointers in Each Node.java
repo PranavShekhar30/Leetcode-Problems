@@ -1,5 +1,5 @@
 TC: O(N);
-SC: O(1);
+SC: O(N); {As we are using a queue}
 
 
 /*
