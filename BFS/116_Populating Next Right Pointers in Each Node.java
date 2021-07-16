@@ -1,3 +1,7 @@
+TC: O(N);
+SC: O(1);
+
+
 /*
 // Definition for a Node.
 class Node {
