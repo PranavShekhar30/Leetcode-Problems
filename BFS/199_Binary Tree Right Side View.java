@@ -35,3 +35,34 @@ class Solution {
     }
     
 }
+
+OR
+
+Method - 2: Using Recursive approach
+
+TC: O(n);
+SC: O(n);
+
+
+class Solution {
+     List<Integer> result = new ArrayList<>();
+    public List<Integer> rightSideView(TreeNode root) {
+       
+        
+        levelOrder(root,0);
+        return result;
+    }
+    
+    public void levelOrder(TreeNode node, int level){
+        if(node==null){
+            return;
+        }
+        
+        if(result.size()==level){
+            result.add(node.val);
+        }
+        levelOrder(node.right,level+1);
+        levelOrder(node.left,level+1);
+
+    }
+}
