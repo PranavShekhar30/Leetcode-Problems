@@ -1,3 +1,8 @@
+  
+TC: O(N);
+SC: O(h);   {h is height of the tree}
+
+
 class Solution {
     public int minDepth(TreeNode root) {
         if(root == null){
