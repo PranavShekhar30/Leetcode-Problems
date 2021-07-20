@@ -1,8 +1,12 @@
+TC: O(N);
+SC: O(N);
+
+
 class Solution {
-    int dia = 0;
+    int ans = 0;
     public int diameterOfBinaryTree(TreeNode root) {
-        height(root);
-        return dia -1;
+        height(root);  
+        return ans;
     }
     
     public int height(TreeNode root){
@@ -11,14 +15,11 @@ class Solution {
         }
         int lh = height(root.left);
         int rh = height(root.right);
-        
-         int mydia=lh+rh+1;
-        if(mydia>dia){
-            dia=mydia;
-        }
-        
-        int ans = Math.max(lh,rh) +  1;
-        return ans;
+        ans = Math.max(ans,(lh+rh));
+  
+        return Math.max(lh,rh) +  1;
     }
 }
+
+
 
