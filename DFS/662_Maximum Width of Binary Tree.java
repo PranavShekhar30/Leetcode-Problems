@@ -1,10 +1,10 @@
 TC: O(N);
 SC: O(N);
 
-Width can be seen as = index of rightmost node - index of leftmost node + 1
+Note: {Width can be seen as = index of rightmost node - index of leftmost node + 1
 assign index to each node, similar as heap on a tree
 root's index = 1, left child is 1 * 2, right child is 1 * 2 + 1, and so on...
-To avoid Integer overflow, still need to do offset by the index of leftmost node
+To avoid Integer overflow, still need to do offset by the index of leftmost node}
 
 
 
