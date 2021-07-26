@@ -25,7 +25,7 @@ class Solution {
 Method - 2 [Using Kadanes Algorithm]
  
 TC: O(N);
-SC:O(1);
+SC: O(1);
 
 class Solution {
     public int maxSubArray(int[] nums) {
