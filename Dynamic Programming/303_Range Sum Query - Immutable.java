@@ -1,4 +1,4 @@
-TC: O(N);
+TC: O(N);    {O(1) time per query, O(n) time pre-computation. Since the cumulative sum is cached, each sumRange query can be calculated in O(1) time.}
 SC: O(N);
 
 
