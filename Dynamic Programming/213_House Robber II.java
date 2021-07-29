@@ -28,7 +28,7 @@
             dp2[i] = Math.max(dp2[i-1],dp2[i-2]+nums[i]);
         }
       
-        // for dp[] if we use the first element, the last element cnanot be used, 
+        // for dp[] if we use the first element, the last element cannot be used, 
         //so the largest profit is max(dp[n-2],dp2[n-1])
         return Math.max(dp1[n-2],dp2[n-1]);
     }
