@@ -5,7 +5,7 @@ class Solution {
     public int maxProduct(int[] nums) {
         int min = nums[0];
         int max = nums[0];
-        int max_TillHere = max;
+        int max_Overall = max;
         
         for(int i=1;i<nums.length;i++){
             
@@ -18,8 +18,8 @@ class Solution {
                 max = Math.max(nums[i],max*nums[i]);
                 min = Math.min(nums[i],min*nums[i]);
             }
-            max_TillHere = Math.max(max,max_TillHere);
+            max_Overall = Math.max(max,max_Overall);
         }
-        return max_TillHere;
+        return max_Overall;
     }
 }
