@@ -19,11 +19,11 @@ class Solution {
         for(int i = 1; i < n; i++){
             for(int j = 0; j < i; j++){
                 if(nums[i] > nums[j]){
-                    if(length[j] + 1 > length[i]){
+                    if(length[j] + 1 > length[i]){  // Length will increase of the sequence
                         length[i] = length[j] + 1;
                         count[i] = count[j];
                     }
-                    else if(length[j] + 1 == length[i]){
+                    else if(length[j] + 1 == length[i]){  // Different sequence comes into picture
                         count[i] += count[j];
                     }
                 }
