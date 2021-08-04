@@ -1,3 +1,6 @@
+TC: O(K);  {K is rowindex}
+SC: O(K);
+
 class Solution {
     public List<Integer> getRow(int rowIndex) {        
         Integer[] dp = new Integer[rowIndex + 1];
