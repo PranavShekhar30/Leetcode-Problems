@@ -12,8 +12,8 @@ class Solution {
         for(int j = 0; j < n+1; j++){
            dp[0][j] = true;
         }
-        for(int i=1; i<=m; i++){
-            for(int j=0; j<=n; j++){
+        for(int i=1; i < m+1; i++){
+            for(int j=0; j <n+1; j++){
                 if(i > j){
                     dp[i][j] = false;
                 }
