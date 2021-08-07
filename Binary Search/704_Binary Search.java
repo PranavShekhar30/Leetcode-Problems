@@ -20,7 +20,7 @@ OR
 
 Using Binary Search
 
-TC: O(N * LOGN);
+TC: O(logN);
 SC: O(1);
 
 class Solution {
