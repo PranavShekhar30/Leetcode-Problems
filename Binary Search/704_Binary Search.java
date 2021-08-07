@@ -1,5 +1,8 @@
 Using Linear Search:
 
+TC: O(N^2);
+SC: O(1);
+
 class Solution {
     public int search(int[] nums, int target) {
         for(int i = 0; i < nums.length; i++){
@@ -16,6 +19,9 @@ OR
 
 
 Using Binary Search
+
+TC: O(N * LOGN);
+SC: O(1);
 
 class Solution {
     public int search(int[] nums, int target) {
