@@ -35,6 +35,6 @@ class Solution {
                 end = mid - 1;
             }
         }
-        return return letters[start % letters.length];
+        return letters[start % letters.length];
     }
 }
