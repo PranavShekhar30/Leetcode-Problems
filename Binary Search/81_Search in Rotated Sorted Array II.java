@@ -1,4 +1,4 @@
-TC: O(N);
+TC: O(N); //for worst case,  [Best case me O(logN)];
 SC: O(1);
 
 class Solution {
