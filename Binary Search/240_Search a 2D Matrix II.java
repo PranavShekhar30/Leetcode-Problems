@@ -20,6 +20,28 @@ class Solution {
 
 Method - 2: Using Binary Search:
 
-TC: O();
-SC: O();
+TC: O(M + N);
+SC: O(1);
 
+class Solution {
+    public boolean searchMatrix(int[][] matrix, int target) {
+        if(matrix.length == 0){
+            return false;
+        }
+        int row = 0;                                         //Start from topright or bottom left
+        int col = matrix[0].length - 1;
+        
+        while(row < matrix.length && col >=0){
+            if(matrix[row][col] == target){
+                return true;
+            }
+            else if(matrix[row][col] < target){             //Going down
+                row++;
+            }
+            else{                                           //Going left
+                col--;
+            }
+        }      
+        return false;
+    }
+}
