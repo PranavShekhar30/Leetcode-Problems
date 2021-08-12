@@ -37,7 +37,7 @@ class Solution {
         
         while(start <= end){
             int mid = start + (end-start)/2;
-            int mid_element = matrix[mid/n][mid%n];
+            int mid_element = matrix[mid/n][mid%n];         // mid/column length & mid%column length gives index of mid_element
             if(target == mid_element){
                 return true;
             }else if(target < mid_element){
