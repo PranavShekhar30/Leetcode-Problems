@@ -2,7 +2,7 @@ TC: O(N);
 SC: O(N);
 
 class Solution {
-    public boolean[][] visited;
+    boolean[][] visited;
     public boolean exist(char[][] board, String word) {
         visited = new boolean[board.length][board[0].length];
         
