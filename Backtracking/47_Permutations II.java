@@ -12,7 +12,7 @@ class Solution {
         }
         else{
             for(int i = start; i < nums.length; i++){
-                if(i != start && !canPermutate(start, i, nums)){
+                if(i != start && !canPermutate(start, i, nums)){        // this method will chk if the number start has appeard before or not in the list of nums
                     continue;
                 }
                 swap(i, start, nums);
