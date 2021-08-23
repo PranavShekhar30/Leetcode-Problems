@@ -17,7 +17,7 @@ class Solution {
             ans.add(res);
             return;
         }
-        String str = maps[digits.charAt(index) - '0'];
+        String str = maps[digits.charAt(index) - '0'];                  // converts number as a string into an integer
         
         for(int i = 0; i < str.length(); i++){
         backtrack(digits, index + 1, res + str.charAt(i), maps);    
