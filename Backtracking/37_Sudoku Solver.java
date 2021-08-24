@@ -45,6 +45,10 @@ class Solution {
 }
 
 
+OR
+
+
+
 class Solution {
     
     public void solveSudoku(char[][] board) {
