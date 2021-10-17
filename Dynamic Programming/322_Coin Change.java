@@ -1,3 +1,7 @@
+TC: O(N*M);     {N IS AMOUNT AND M IS NO. OF COINS}
+SC: O(N);
+
+
 class Solution {
     public int coinChange(int[] coins, int amount) {
         int dp[] = new int[amount+1]; 
