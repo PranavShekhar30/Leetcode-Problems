@@ -10,7 +10,9 @@ class Solution {
             maxHeap.add(stone);
         }
         while(maxHeap.size() > 1){
-            maxHeap.offer(maxHeap.poll() - maxHeap.poll());
+            int stone1 = maxHeap.poll();
+            int stone2 = maxHeap.poll();
+            maxHeap.add(Math.abs(stone1 - stone2));
         }
         return maxHeap.poll();
     }
